@@ -1,0 +1,9 @@
+.page .page-block {
+  padding: 1.38rem 2ch;
+  margin: 1.38rem 0;
+
+  & > .page-block-container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+  }
+}

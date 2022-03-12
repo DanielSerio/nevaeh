@@ -1,0 +1,19 @@
+ul {
+  margin: 1.38rem auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 65ch;
+  padding: 0 0 0 2ch;
+  list-style-image: url('/bullet-primary.svg');
+
+  li { 
+    line-height: inherit; 
+  }
+}
+
+.inverted ul,
+footer ul {
+  list-style-image: url('/bullet-accent.svg'); 
+}
+
+ 

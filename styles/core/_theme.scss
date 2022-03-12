@@ -1,0 +1,31 @@
+.page > .footer {
+  background: $background-color-inverted;
+  color: grey(10, 48);
+  text-shadow: -1px -2px 0 black;
+}
+
+::selection {
+  background-color: $highlight-color;
+  color: white;
+}
+
+.page .footer a::selection,
+.page .footer ul::selection,
+.page .footer li::selection,
+.page .footer p::selection,
+.page .footer h5::selection,
+.page .footer h4::selection,
+.page .footer h3::selection,
+.page .footer h2::selection,
+.page .footer h1::selection,
+.page .inverted p::selection,
+.page .inverted h5::selection,
+.page .inverted h4::selection,
+.page .inverted h3::selection,
+.page .inverted h2::selection,
+.page .inverted h1::selection  {
+  text-decoration: none;
+  text-shadow: none;
+  background-color: $inverted-highlight-color;
+  color: black;
+}

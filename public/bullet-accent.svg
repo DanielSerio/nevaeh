@@ -1,0 +1,6 @@
+<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+  <!-- CPS: [2,2] [18,2] [18,18] [2,18]-->
+  <path fill="#ffc300" d="M4,2 H 16 Q 18,2 18,4 V 16 Q 18,18 16,18 H 4 Q 2,18 2,16 V 4 Q 2,2 4,2 Z" />
+  <path fill="black" style="filter: blur(1px); opacity: 0.2;"
+    d="M4,2 H 16 Q 18,2 18,4 V 16 Q 18,18 16,18 H 4 Q 2,18 2,16 V 4 Q 2,2 4,2 Z" />
+</svg>

@@ -1,0 +1,30 @@
+$primary-hue: 207;
+$accent-hue: 46;
+$red-hue: 360;
+$grey-hue: 198;
+
+@function grey($saturation: 10, $lightness: 50) {
+  @return hsl($grey-hue, $saturation + 0%, $lightness + 0%);
+}
+
+@function primary($saturation: 100, $lightness: 50) {
+  @return hsl($primary-hue, $saturation + 0%, $lightness + 0%);
+}
+
+@function accent($saturation: 100, $lightness: 50) {
+  @return hsl($accent-hue, $saturation + 0%, $lightness + 0%);
+}
+
+@function error($saturation: 100, $lightness: 50) {
+  @return hsl($error-hue, $saturation + 0%, $lightness + 0%);
+}
+
+$background-color: grey(10, 97);
+$background-color-inverted: grey(10, 10);
+$font-color: grey(10, 20);
+$font-color-inverted: grey(10, 90);
+
+$link-color: primary(100, 45);
+
+$highlight-color: primary(100, 35);
+$inverted-highlight-color: accent(100, 75);
