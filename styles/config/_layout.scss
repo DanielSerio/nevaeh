@@ -1,1 +1,7 @@
 $container-max-width: 1200px;
+
+$header-height: calc(64px + 4ch);
+
+$background-z-layer: -9999;
+$foreground-z-layer: 0;
+$top-z-layer: 9999;

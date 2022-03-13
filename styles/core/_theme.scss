@@ -1,3 +1,9 @@
+.page > .header {
+  background: white;
+  
+  &:after {}
+}
+
 .page > .footer {
   background: $background-color-inverted;
   color: grey(10, 48);

@@ -1,0 +1,52 @@
+.page > .header {
+  height: $header-height;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 2ch;
+  z-index: $top-z-layer;
+
+  &:before,
+  &:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    height: 0.1rem;
+    width: 120%;
+    bottom: 0;
+    background: white;
+    left: -10%;
+  }
+
+  &:before {
+    height: 2rem;
+    z-index: 8889;
+    background: white;
+  }
+
+  &:after {
+    z-index: 888;
+    box-shadow: 0 2px 8px -0.5px black;
+  }
+
+  .container {
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+  }
+}
+
+.page > .header .header-logo-area {
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 200px;
+
+  img {
+    position: relative;
+    display: block;
+    height: 64px;
+    width: auto;
+  }
+}
