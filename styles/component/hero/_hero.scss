@@ -1,0 +1,33 @@
+.hero {
+  position: relative;
+  height: 550px;
+  overflow: hidden;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+
+  &-background,
+  &-foreground { position: absolute; }
+
+  &-background {
+    height: 250%;
+    width: 250%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    transform-origin: top center;
+    left: -75%;
+    top: -60%;
+    transition: all 60ms linear;
+    transform: translateZ(-400px) translateY(0);
+    filter: grayscale(30%);
+  }
+
+  &-foreground {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: $foreground-z-layer;
+  }
+}

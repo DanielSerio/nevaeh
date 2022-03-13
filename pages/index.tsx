@@ -1,16 +1,25 @@
 
 import Head from 'next/head'
+import { UIEvent, useRef, useState } from 'react'
 import Content from '../components/Content/Content'
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
+import Hero from '../components/Hero/Hero'
 import Page from '../components/Page/Page'
 import PageBlock from '../components/Page/PageBlock'
 
 
 export default function Home() {
+  const [scrolltop, setScrolltop] = useState<number>(0)
+
+  function onScroll(e: UIEvent) {
+    const { scrollTop } = e.target as HTMLDivElement
+    if (scrollTop <= 600) setScrolltop(scrollTop)
+  }
+
   //TODO: SEO
   return (
-    <Page className='simple'>
+    <Page className='simple' onScroll={onScroll}>
       <Head>
         <title>Nevaeh Insurance</title>
         <meta name="description" content="Nevaeh Insurance" />
@@ -18,6 +27,9 @@ export default function Home() {
       </Head>
       <Header />
       <Content>
+        <Hero url="/beach.jpg" scrolltop={scrolltop}>
+
+        </Hero>
         <PageBlock>
           <h1>About Nevaeh</h1>
           <p>Nevaeh Insurance Solutions is an external facility
