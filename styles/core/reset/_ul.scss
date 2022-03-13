@@ -16,4 +16,10 @@ footer ul {
   list-style-image: url('/bullet-accent.svg'); 
 }
 
+nav ul,
+nav .inverted ul,
+.page nav ul {
+  list-style-type: none;
+  list-style-image: none;
+}
  
