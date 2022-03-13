@@ -21,7 +21,6 @@ export default function MobileNav(Props: MobileNavProps) {
 
   const toggleIsOpen = useCallback(
     () => {
-      alert()
       setMenuIsOpen(!menuIsOpen)
     }
     , [menuIsOpen, setMenuIsOpen])

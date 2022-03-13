@@ -1,0 +1,39 @@
+.page nav .desktop-nav {
+  height: 0;
+  width: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  opacity: 0;
+  display: flex;
+  transition: all 120ms ease;
+}
+
+@media screen and (min-width: 1000px) {
+  .page nav .desktop-nav {
+    height: 2rem;
+    width: fit-content;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    opacity: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 600px;
+    margin-right: 1ch;
+
+    a { 
+      display: flex;
+      align-items: center;
+      transition: all 80ms ease; 
+      color: grey(10, 40);
+    }
+
+    a:hover { color: $link-color; }
+
+    a > .icon {
+      margin: 0 0.5ch 0 1ch;
+    }
+  }
+}

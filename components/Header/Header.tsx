@@ -46,7 +46,7 @@ export default function Header() {
       <section className="container">
         <HeaderLogoArea />
         <nav className='main-nav'>
-          <DesktopNav />
+          <DesktopNav links={pages} />
           <HeaderContactInfo />
           <MobileNav links={pages} />
         </nav>
