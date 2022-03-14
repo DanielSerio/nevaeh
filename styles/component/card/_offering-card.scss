@@ -1,0 +1,12 @@
+.offering-card {
+  background: primary(10, 92);
+  text-shadow: 0 1px 0 white;
+  border: 8px solid primary(20, 86);
+
+  h2 { 
+    margin-top: 1.38rem; 
+    color: accent(10, 20);
+  }
+
+  li { color: grey(8, 40); }
+}
