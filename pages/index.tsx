@@ -1,7 +1,8 @@
 
 import Head from 'next/head'
-import { UIEvent, useRef, useState } from 'react'
+import { UIEvent, useState } from 'react'
 import Content from '../components/Content/Content'
+import LinkButton from '../components/controls/LinkButton'
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import Hero from '../components/Hero/Hero'
@@ -28,7 +29,14 @@ export default function Home() {
       <Header />
       <Content>
         <Hero url="/beach.jpg" scrolltop={scrolltop}>
-
+          <div className="hero-box">
+            <h1 className="h2">Imagine the possibilities</h1>
+            <h2 className="p">Nevaeh Insurance Solutions is an
+              external facility performing functions on behalf of
+              insurance carriers, such as underwriting, product
+              development, business acquisition, and program management.</h2>
+            <LinkButton href="/contact">Contact Us</LinkButton>
+          </div>
         </Hero>
         <PageBlock>
           <h1>About Nevaeh</h1>

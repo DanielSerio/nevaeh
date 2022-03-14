@@ -9,7 +9,7 @@ export default function Hero(Props: HeroProps) {
   const { url, children, scrolltop, ...props } = Props
   const styles = {
     backgroundImage: `url(${url})`,
-    transform: `translateZ(-${200 + (scrolltop * 1.5)}px) translateY(-${scrolltop / 4}px)`,
+    transform: `translateZ(-${200 + (scrolltop / 2)}px) translateY(-${scrolltop / 6}px)`,
     filter: `grayscale(30%) sepia(${(scrolltop || 1) / 300})`
   }
   return (
