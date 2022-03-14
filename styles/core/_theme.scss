@@ -1,13 +1,18 @@
 .page > .header {
   background: white;
-  
-  &:after {}
 }
 
 .page > .footer {
   background: $background-color-inverted;
-  color: grey(10, 48);
+  color: grey(10, 68);
   text-shadow: -1px -2px 0 black;
+
+
+  a { 
+    color: primary(100, 70);
+    
+    &:hover { color: primary(100, 80); }
+  }
 }
 
 ::selection {

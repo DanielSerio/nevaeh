@@ -1,12 +1,18 @@
 import React from 'react';
+import CertSection from './CertSection';
+import ContactSection from './ContactSection';
 import FooterBlock from './FooterBlock';
+import InfoSection from './InfoSection';
+import NavSection from './NavSection';
 
 export default function Footer() {
   return (
     <footer className="footer">
       <FooterBlock>
         <div className="footer-top">
-          <div className="image-container"></div>
+          <div className="image-container">
+            <img className="footer-top-logo" src="/n-logo.png" alt="Nevaeh Logo" />
+          </div>
           <div className="card footer-card">
             <h1>Why Nevaeh?</h1>
             <h2 className='p'>Nevaeh’s experienced team brings efficiencies
@@ -22,10 +28,16 @@ export default function Footer() {
           </div>
         </div>
       </FooterBlock>
-      <FooterBlock>
-        sections
+      <FooterBlock className='sections'>
+        <InfoSection />
+        <ContactSection />
+        <NavSection />
+        <CertSection />
       </FooterBlock>
-      <FooterBlock></FooterBlock>
+      <FooterBlock style={{ textAlign: 'center' }}>
+        <small>Copyright © 2021 Nevaeh Insurance Solutions
+          | All rights reserved.</small>
+      </FooterBlock>
     </footer>
   );
 }
