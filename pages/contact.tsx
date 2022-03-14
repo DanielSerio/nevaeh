@@ -1,15 +1,12 @@
 
 import Head from 'next/head'
 import { MdMail, MdPhone } from 'react-icons/md'
-import Aside from '../components/Aside/Aside'
+import ContactForm from '../components/ContactForm/ContactForm'
 import Content from '../components/Content/Content'
-import LinkButton from '../components/controls/LinkButton'
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
-import Hero from '../components/Hero/Hero'
 import Page from '../components/Page/Page'
 import PageBlock from '../components/Page/PageBlock'
-import usePageScroll from '../hooks/use-page-scroll'
 
 export default function NevaehAdvantage() {
 
@@ -23,7 +20,7 @@ export default function NevaehAdvantage() {
       </Head>
       <Header />
       <Content>
-        <PageBlock>
+        <PageBlock className="contact-block">
           <h1>Contact us, We Are Here to Help You</h1>
           <div className="display-contact">
             <div className="block">
@@ -41,6 +38,7 @@ export default function NevaehAdvantage() {
               </a>
             </div>
           </div>
+          <ContactForm />
         </PageBlock>
       </Content>
       <Footer />

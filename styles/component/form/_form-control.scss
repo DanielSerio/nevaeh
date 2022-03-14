@@ -1,0 +1,45 @@
+.form .form-control {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 1.38rem;
+  padding: 0.2ch;
+
+  .label {
+    font-size: 0.8rem;
+    opacity: 0.9;
+    line-height: 1rem;
+    margin-bottom: 0.654rem;
+
+    .text { font-weight: 700; }
+
+    .helper {
+      display: inline-block;
+      margin-left: 1ch;
+      opacity: 0.8;
+    }
+  }
+
+  &.error .input {
+    border-color: error(60, 40);
+  }
+
+  .input:focus + .label .text { color: primary(100, 45); }
+
+  &.error .error,
+  &.error .text,
+  &.error .input:focus + .label .text { color: error(100, 45); }
+
+  &.error .input:focus {
+    border-color: error(100, 45);
+    outline-style: solid;
+    outline-width: 0.2ch;
+    outline-color: error(100, 45);
+  }
+
+  textarea {
+    padding: 2ch;
+    resize: vertical;
+    min-height: calc(4ch + 3.22rem);
+    max-height: 800px;
+  }
+}

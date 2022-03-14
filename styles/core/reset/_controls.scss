@@ -16,3 +16,31 @@ button {
   align-items: center;
   justify-content: center;
 }
+
+input {
+  padding: 0 1ch;
+  outline-width: 0px;
+  outline-style: solid;
+  outline-color: transparent;
+
+  &:focus {
+    border-color: primary(100, 45);
+    outline-color: primary(100, 50);
+    outline-style: solid;
+    outline-width: 0.2ch;
+  }
+}
+
+input,
+button { line-height: 2; }
+
+input,
+textarea { 
+  border-radius: 3px; 
+  transition: all 80ms ease;
+  border: 0.1rem solid grey(10, 70);
+
+  &:hover {
+    border-color: grey(10, 50);
+  }
+}

@@ -2,6 +2,7 @@ $primary-hue: 207;
 $accent-hue: 46;
 $red-hue: 360;
 $grey-hue: 198;
+$error-hue: 360;
 
 @function grey($saturation: 10, $lightness: 50) {
   @return hsl($grey-hue, $saturation + 0%, $lightness + 0%);
