@@ -41,7 +41,26 @@
 }
 
 
+.about-tom-block {
+  .page-block-container {
+    display: flex;
+    flex-direction: column;
+
+    .links .link-btn {
+      padding-left: 0;
+    }
+  }
+}
+
+
 @media screen and (min-width: 840px) {
+  .about-tom-block {
+    .page-block-container {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
   .offerings-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -80,5 +99,18 @@
       grid-column: 1; 
     }
     .card-area { grid-column: 2; }
+  }
+}
+
+.page-block .display-contact {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 2.76rem auto;
+
+  .block > a {
+    display: flex;
+
+    .icon { margin: 0 1ch; }
   }
 }

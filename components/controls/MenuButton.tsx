@@ -7,7 +7,7 @@ export default function MenuButton(Props: MenuButtonProps) {
   const { ...props } = Props
 
   return (
-    <button type="button" className="menu-btn" {...props}>
+    <button aria-label="menu" name="menu" type="button" className="menu-btn" {...props}>
       <CgMenu />
     </button>
   );

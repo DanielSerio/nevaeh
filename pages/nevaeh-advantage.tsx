@@ -1,10 +1,8 @@
 
 import Head from 'next/head'
-import { UIEvent, useState } from 'react'
 import Aside from '../components/Aside/Aside'
 import Content from '../components/Content/Content'
 import LinkButton from '../components/controls/LinkButton'
-import Figure from '../components/Figure/Figure'
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import Hero from '../components/Hero/Hero'

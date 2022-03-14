@@ -25,3 +25,24 @@
   background: grey(8, 78);
   color: grey(12, 20);
 }
+
+.figure-wrap {
+  max-width: fit-content;
+  margin: 1.38rem auto;
+
+  .links {
+    display: flex;
+    flex-direction: column;
+
+    a > .icon { margin: 0 1ch; }
+  }
+}
+
+.about-tom + .figure-wrap > .figure-container {
+  box-shadow: none;
+
+  figcaption { color: white; }
+
+  figcaption,
+  img { box-shadow: 0 0 4px -1px rgba(0,0,0,0.3); }
+}

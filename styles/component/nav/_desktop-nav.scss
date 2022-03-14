@@ -35,5 +35,7 @@
     a > .icon {
       margin: 0 0.5ch 0 1ch;
     }
+
+    li.active a { color: primary(100, 43); }
   }
 }

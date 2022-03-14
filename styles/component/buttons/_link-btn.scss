@@ -5,6 +5,7 @@
   transition: background 80ms ease;
   height: 2rem;
   display: inline-block;
+  text-shadow: 0 0 0 black;
   
   &:hover { text-decoration: none; }
 
@@ -15,7 +16,7 @@
 
 
   &.primary { 
-    background-color: primary(100, 45); 
+    background-color: primary(100, 40); 
     color: white;
 
     &:hover { background-color: primary(100, 35); }
