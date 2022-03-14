@@ -9,8 +9,8 @@ export default function Hero(Props: HeroProps) {
   const { url, children, scrolltop, ...props } = Props
   const styles = {
     backgroundImage: `url(${url})`,
-    transform: `translateZ(-${200 + (scrolltop / 2)}px) translateY(-${scrolltop / 6}px)`,
-    filter: `grayscale(30%) sepia(${(scrolltop || 1) / 300})`
+    //transform: `translateZ(-${200 + (scrolltop / 6)}px)`,
+    filter: `grayscale(${30 + (Math.floor(scrolltop || 1) / 8)}%) blur(${scrolltop / 60}px)`
   }
   return (
     <div className="hero" {...props}>

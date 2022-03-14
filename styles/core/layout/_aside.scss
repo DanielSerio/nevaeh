@@ -1,0 +1,44 @@
+.aside {
+  padding: 2ch;
+  margin-bottom: 2.76rem;
+
+  address {
+    background: white;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2ch;
+    border-radius: 3px;
+    box-shadow: 0 0 6px -1px rgba(0,0,0,0.1);
+
+    h2 {
+      grid-row: 1;
+      grid-column: 2;
+      font-size: 0.68rem;
+    }
+
+    h1 { font-size: 1.2rem; }
+
+    h1,
+    h2 {
+      line-height: 2.76rem;
+      margin: 1.38rem auto;
+      text-align: left;
+    }
+
+    a { 
+      font-size: 0.8rem;
+      line-height: 2rem; 
+      grid-column: 1;
+
+      .icon { margin: 0 1ch; }
+    }
+  }
+
+  .text-large {
+    font-weight: 200;
+    font-size: 1.38rem;
+  }
+}

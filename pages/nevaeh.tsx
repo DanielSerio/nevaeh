@@ -1,28 +1,21 @@
 
 import Head from 'next/head'
-import { UIEvent, useState } from 'react'
 import Content from '../components/Content/Content'
 import LinkButton from '../components/controls/LinkButton'
-import Figure from '../components/Figure/Figure'
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import Hero from '../components/Hero/Hero'
 import OfferingsBlock from '../components/OfferingsBlock/OfferingsBlock'
 import Page from '../components/Page/Page'
 import PageBlock from '../components/Page/PageBlock'
-import { BsLinkedin } from 'react-icons/bs'
-import { MdLocalOffer, MdReadMore } from 'react-icons/md'
+import { MdLocalOffer } from 'react-icons/md'
 import TabContent from '../components/TabContent/TabContent'
 import NevaehContent from '../components/NevaehContent'
 import { AiOutlineSafety } from 'react-icons/ai'
+import usePageScroll from '../hooks/use-page-scroll'
 
-export default function Home() {
-  const [scrolltop, setScrolltop] = useState<number>(0)
-
-  function onScroll(e: UIEvent) {
-    const { scrollTop } = e.target as HTMLDivElement
-    if (scrollTop <= 600) setScrolltop(scrollTop)
-  }
+export default function Navaeh() {
+  const { onScroll, scrolltop } = usePageScroll()
 
   //TODO: SEO
   return (

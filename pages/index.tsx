@@ -12,14 +12,10 @@ import Page from '../components/Page/Page'
 import PageBlock from '../components/Page/PageBlock'
 import { BsLinkedin } from 'react-icons/bs'
 import { MdReadMore } from 'react-icons/md'
+import usePageScroll from '../hooks/use-page-scroll'
 
 export default function Home() {
-  const [scrolltop, setScrolltop] = useState<number>(0)
-
-  function onScroll(e: UIEvent) {
-    const { scrollTop } = e.target as HTMLDivElement
-    if (scrollTop <= 600) setScrolltop(scrollTop)
-  }
+  const { onScroll, scrolltop } = usePageScroll()
 
   //TODO: SEO
   return (

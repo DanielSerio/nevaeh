@@ -31,6 +31,8 @@
         border-color: accent(100, 45);
         background-color: accent(100, 45);
         color: white;
+        font-weight: 700;
+        text-shadow: 0 0 0 black;
       }
 
       &:not(.active):hover {
