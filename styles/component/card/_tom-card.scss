@@ -1,0 +1,33 @@
+.tom-card {
+  border: 1px solid grey(15, 30);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .h3 { margin-top: 0; }
+
+  .p { margin-top: 1.38rem; }
+
+  .h3,
+  .p { max-width: 445px; }
+
+  .link-btn {
+    display: block;
+
+    .icon { margin: 0 1ch; }
+  }
+
+  .link-btn.social {
+    margin: 1ch 0 1.38rem 0;
+    color: grey(10, 90);
+
+    &:hover { 
+      background: grey(8,25);
+      color: grey(10, 98);
+     }
+  }
+
+  .link-btn:last-of-type {
+    margin-bottom: 1.38rem;
+  }
+}

@@ -1,0 +1,27 @@
+.figure-container {
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 6px -1px rgba(0,0,0,0.2);
+
+  figure { position: relative; }
+
+  & img,
+  & figcaption { border-radius: 3px; }
+
+  figcaption {
+    margin-top: 1ch;
+    background: grey(8, 8);
+    padding: 0 0 0 1ch;
+    width: 100%;
+    bottom: 1px;
+  }
+  
+  figcaption {
+    position: absolute;
+  }
+}
+
+.inverted .figure-container figcaption {
+  background: grey(8, 78);
+  color: grey(12, 20);
+}

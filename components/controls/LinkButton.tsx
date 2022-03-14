@@ -1,7 +1,7 @@
 import React, { ComponentProps } from 'react';
 import { formatClassNames } from '../../utils';
 
-type LinkButtonType = 'primary' | 'accent' | 'footer';
+type LinkButtonType = 'primary' | 'accent' | 'footer' | 'social';
 
 interface LinkButtonProps extends ComponentProps<'a'> {
   type?: LinkButtonType
@@ -10,10 +10,9 @@ interface LinkButtonProps extends ComponentProps<'a'> {
 
 export default function LinkButton(Props: LinkButtonProps) {
   const { type, href, children, ...props } = Props
-  if (!type)
-    return (
-      <a href={href} className={formatClassNames('link-btn', type ? type : 'primary')} {...props}>
-        {children}
-      </a>
-    );
+  return (
+    <a href={href} className={formatClassNames('link-btn', type ? type : 'primary')} {...props}>
+      {children}
+    </a>
+  );
 }

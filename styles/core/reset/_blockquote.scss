@@ -1,0 +1,17 @@
+blockquote {
+  max-width: 55ch;
+  margin: 1.38rem auto;
+
+  p { 
+    padding: 0 0 0 2ch;
+    font-style: italic; 
+  }
+
+  .author {
+    margin: 1.38rem auto;
+    font-size: 1rem;
+    color: grey(10, 40);
+
+    b { color: grey(10, 10); }
+  }
+}

@@ -3,13 +3,15 @@ import Head from 'next/head'
 import { UIEvent, useState } from 'react'
 import Content from '../components/Content/Content'
 import LinkButton from '../components/controls/LinkButton'
+import Figure from '../components/Figure/Figure'
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import Hero from '../components/Hero/Hero'
 import OfferingsBlock from '../components/OfferingsBlock/OfferingsBlock'
 import Page from '../components/Page/Page'
 import PageBlock from '../components/Page/PageBlock'
-
+import { BsLinkedin } from 'react-icons/bs'
+import { MdReadMore } from 'react-icons/md'
 
 export default function Home() {
   const [scrolltop, setScrolltop] = useState<number>(0)
@@ -53,17 +55,24 @@ export default function Home() {
             before making a commitment and investment in new ideas.</p>
           <p>Many insurance companies like to talk about their innovation
             strategies but fall short for many reasons.</p>
-          <blockquote>
+          <blockquote className="tom-quote">
             <p className="quote">"Let Nevaeh help you measure twice and cut once to attain
               business success without the typical risk
               associated with execution."</p>
-            <h2 className="author">Tom DeNoma, CEO/President</h2>
+            <h2 className="author"><b>Tom DeNoma</b> CEO/President</h2>
           </blockquote>
         </PageBlock>
         <PageBlock inverted>
           <div className="tom-grid">
-            <h1> Getting to know Tom DeNoma</h1>
-            <div className="figure-area"></div>
+            <h1 className='h2'> Getting to know Tom DeNoma</h1>
+            <div className="figure-area">
+              <Figure
+                width={200}
+                height={200}
+                imgAlt="A picture of Tom DeNoma"
+                imgSrc='/tom.jpg'
+                caption='Tom DeNoma' />
+            </div>
             <div className="card-area">
               <div className="card tom-card">
                 <h2 className="h3">Tom DeNoma is Chief Executive Officer
@@ -72,6 +81,16 @@ export default function Home() {
                   performing functions on behalf of insurance carriers,
                   such as underwriting, product development,
                   business acquisition and overall program management.</h3>
+                <LinkButton type="social" href="https://www.linkedin.com/in/tom-denoma-b0386518a/">
+                  <span className="icon"><BsLinkedin /></span>
+                  <span className="text">Linkedin</span>
+                </LinkButton>
+                <LinkButton href="/tom-denoma">
+                  <span className="icon">
+                    <MdReadMore />
+                  </span>
+                  <span className="text">Read More</span>
+                </LinkButton>
               </div>
             </div>
           </div>
