@@ -85,7 +85,7 @@ export default function Home() {
                   <span className="icon">
                     <MdReadMore />
                   </span>
-                  <span className="text">Read More</span>
+                  <span className="text">Read More about Tom DeNoma</span>
                 </LinkButton>
               </div>
             </div>
